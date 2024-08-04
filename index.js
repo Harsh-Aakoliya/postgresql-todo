@@ -3,6 +3,9 @@ const app=express();
 const Pool=require("pg").Pool
 const path=require("path");
 const PORT=3000;
+const cors = require('cors')
+
+
 require("dotenv").config()
 
 app.use(cors());
