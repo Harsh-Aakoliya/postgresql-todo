@@ -5,7 +5,7 @@ const path=require("path");
 const PORT=3000;
 require("dotenv").config()
 
-
+app.use(cors());
 
 const pool=new Pool({
     // user:process.env.USER_NAME,
