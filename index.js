@@ -8,12 +8,12 @@ require("dotenv").config()
 
 
 const pool=new Pool({
-    // user:process.env.USER_NAME,
-    // host:process.env.HOST_NAME,
-    // database:process.env.DB_NAME,
-    // password:process.env.DB_PASSWORD,
-    // dialect:process.env.DB_DIALECT,
-    // port:process.env.PORT_NUMBER
+    user:process.env.USER_NAME,
+    host:process.env.HOST_NAME,
+    database:process.env.DB_NAME,
+    password:process.env.DB_PASSWORD,
+    dialect:process.env.DB_DIALECT,
+    port:process.env.PORT_NUMBER,
     connectionString: process.env.POSTGRES_URL,
 
 });
